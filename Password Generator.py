@@ -32,15 +32,6 @@ length = int(length)
 
 #generating the number of letters in the password whilst making sure it is of type int.
 letter_num = input("How many letters do you want in your password? ")
-def check_user_input(letter_num):
-    try:
-        letter_num = int(letter_num)
-    except ValueError:
-        try:
-            letter_num = float(letter_num)
-            print("Error! Decimal detected. Input must be an integer.")
-        except ValueError:
-            print("Error! Invalid input. Input must be an integer.")
 check_user_input(letter_num)
 letter_num = int(letter_num)
 
@@ -50,15 +41,6 @@ letter_num = int(letter_num)
 
 #generating the number of digits in the password whilst making sure it is of type int.
 num = input("How many numbers do you want in your password? ")
-def check_user_input(num):
-    try:
-        num = int(num)
-    except ValueError:
-        try:
-            num = float(num)
-            print("Error! Decimal detected. Input must be an integer.")
-        except ValueError:
-            print("Error! Invalid input. Input must be an integer.")
 check_user_input(num)
 num = int(num)
 
